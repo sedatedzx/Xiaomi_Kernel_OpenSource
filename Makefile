@@ -1947,6 +1947,9 @@ endif	# skip-makefile
 PHONY += FORCE
 FORCE:
 
+CC = proton-clang
+ASFLAGS = -EL=0
+
 # Declare the contents of the .PHONY variable as phony.  We keep that
 # information in a variable so we can use it in if_changed and friends.
 .PHONY: $(PHONY)
